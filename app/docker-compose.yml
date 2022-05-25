@@ -1,0 +1,11 @@
+version: "3.9.12"
+
+services:
+  mlapp:
+    container_name: nlp-flask
+    image: northpr/nlp-flask
+    ports:
+      - "5000:5000"
+    build:
+      context: .
+      dockerfile: Dockerfile
